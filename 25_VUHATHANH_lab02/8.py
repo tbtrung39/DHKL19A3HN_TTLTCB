@@ -1,6 +1,5 @@
 tnct = int(input("Nhập thâm niên công tác (tháng): "))
 luong_can_ban = 1350000
-
 if tnct < 12:
     he_so = 2.34
 elif tnct < 36:
