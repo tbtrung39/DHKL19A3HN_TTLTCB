@@ -1,0 +1,5 @@
+Str = input("Nhập đoạn văn bản: ")
+tu_don = input("Nhập từ đơn cần tìm: ")
+danh_sach_tu = Str.split()
+so_lan = danh_sach_tu.count(tu_don)
+print(f"Từ '{tu_don}' xuất hiện {so_lan} lần trong văn bản.")
