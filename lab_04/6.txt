@@ -1,0 +1,6 @@
+n = input("Nhập số: ")
+
+chu = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"]
+
+for i in n:
+    print(chu[int(i)], end=" ")

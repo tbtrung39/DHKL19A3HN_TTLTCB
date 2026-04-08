@@ -1,0 +1,4 @@
+kytu = input("Nhập ký tự: ")
+
+for i in kytu:
+    print("ASCII của", i, "=", ord(i))

@@ -1,0 +1,8 @@
+tu = int(input("Nhập tử số: "))
+mau = int(input("Nhập mẫu số (khác 0): "))
+
+for i in range(1):  
+    if mau == 0:
+        mau = int(input("Nhập lại mẫu số: "))
+
+print("Phân số là:", tu, "/", mau)
