@@ -1,0 +1,19 @@
+A = input("Nhập A: ")
+B = input("Nhập B: ")
+
+tim_duoc = False
+
+for i in range(1, len(A)):
+    a1 = int(A[:i])
+    a2 = int(A[i:])
+
+    for j in range(1, len(B)):
+        b1 = int(B[:j])
+        b2 = int(B[j:])
+
+        if a1 + a2 == b1 + b2:
+            print(a1, "+", a2, "=", b1, "+", b2)
+            tim_duoc = True
+
+if not tim_duoc:
+    print("Không tồn tại cách đặt!")

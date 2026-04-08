@@ -1,0 +1,16 @@
+s = input("Nhập chuỗi: ")
+
+so = "".join(c for c in s if c.isdigit())
+
+print("Chuỗi số:", so)
+
+if so:
+    n = int(so)
+    tong = sum(i for i in range(1, n) if n % i == 0)
+    
+    if tong == n:
+        print("Là số hoàn hảo")
+    else:
+        print("Không phải số hoàn hảo")
+else:
+    print("Không có số")

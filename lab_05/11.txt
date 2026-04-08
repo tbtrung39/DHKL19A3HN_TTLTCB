@@ -1,0 +1,9 @@
+s = input("Nhập chuỗi nhị phân: ")
+
+if all(c in '01' for c in s):
+    decimal = 0
+    for i in range(len(s)):
+        decimal += int(s[i]) * (2 ** (len(s)-1-i))
+    print("Số thập phân:", decimal)
+else:
+    print("Không phải chuỗi nhị phân")
