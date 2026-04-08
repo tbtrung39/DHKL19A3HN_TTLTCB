@@ -1,0 +1,6 @@
+n = int(input("Nhập số nguyên: "))
+
+n = abs(n)  # xử lý số âm
+hang_tram = (n // 100) % 10
+
+print("Chữ số hàng trăm là:", hang_tram)

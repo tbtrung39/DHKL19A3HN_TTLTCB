@@ -1,0 +1,19 @@
+start = int(input("Nhập giờ bắt đầu: "))
+end = int(input("Nhập giờ kết thúc: "))
+
+if start < 5 or end > 22 or start > end:
+    print("Giờ không hợp lệ")
+else:
+    tong = 0
+    gio = end - start
+
+    for i in range(gio):
+        if i < 3:
+            tong += 100000
+        else:
+            tong += 100000 * 0.75
+
+    if start >= 11 and end <= 15:
+        tong *= 0.9
+
+    print("Tiền phải trả:", tong)
