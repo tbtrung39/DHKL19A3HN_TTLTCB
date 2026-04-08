@@ -1,0 +1,12 @@
+n = int(input("Nhập số nguyên dương: "))
+
+print("Phân tích:", end=" ")
+
+for i in range(2, n + 1):
+    count = 0
+    for j in range(n):  # lặp đủ lớn để chia hết
+        if n % i == 0:
+            n //= i
+            count += 1
+    if count > 0:
+        print(f"{i}^{count}", end=" ")
