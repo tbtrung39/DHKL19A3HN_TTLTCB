@@ -1,0 +1,6 @@
+A_nhap = input("Nhap tap A: ").split()
+B_nhap = input("Nhap tap B: ").split()
+A = set(A_nhap)
+B = set(B_nhap)
+chung = A.intersection(B)
+print(list(chung))
