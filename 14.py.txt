@@ -1,0 +1,10 @@
+n = int(input("Nhap so phan tu: "))
+lst = []
+
+for i in range(n):
+    x = int(input(f"Nhap phan tu thu {i+1}: "))
+    lst.append(x)
+
+binh_phuong = list(map(lambda x: x**2, lst))
+print("Danh sach ban dau:", lst)
+print("Danh sach binh phuong:", binh_phuong)

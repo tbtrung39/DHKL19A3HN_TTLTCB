@@ -1,0 +1,14 @@
+n = int(input("Nhap so phan tu: "))
+lst = []
+
+for i in range(n):
+    x = int(input(f"Nhap phan tu thu {i+1}: "))
+    lst.append(x)
+
+ket_qua = list(
+    map(lambda x: x**2,
+        filter(lambda x: x % 2 != 0, lst))
+)
+
+print("Danh sach ban dau:", lst)
+print("Binh phuong cac so le:", ket_qua)

@@ -1,0 +1,31 @@
+# Ham nhap thong tin
+def nhap():
+    ho_ten = input("Nhap ho ten: ")
+    que_quan = input("Nhap que quan: ")
+    tham_nien = int(input("Nhap so nam cong tac: "))
+    return ho_ten, que_quan, tham_nien
+
+# Ham tinh luong
+def tinh_luong(tham_nien):
+    luong_co_ban = 5000000
+
+    if tham_nien < 1:
+        he_so = 1
+    elif tham_nien < 3:
+        he_so = 1.2
+    elif tham_nien < 5:
+        he_so = 1.5
+    else:
+        he_so = 2
+
+    return luong_co_ban * he_so
+
+def xuat(ho_ten, que_quan, tham_nien, luong):
+    print("Ho ten:", ho_ten)
+    print("Que quan:", que_quan)
+    print("Tham nien:", tham_nien, "nam")
+    print("Luong:", luong)
+
+ho_ten, que_quan, tham_nien = nhap()
+luong = tinh_luong(tham_nien)
+xuat(ho_ten, que_quan, tham_nien, luong)
