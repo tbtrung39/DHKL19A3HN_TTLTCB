@@ -1,0 +1,4 @@
+import random
+nums = [random.randint(0,200) for x in range(100)]
+result = [x for x in nums if x % 5 == 0 and x % 7 == 0]
+print(result)

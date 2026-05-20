@@ -1,0 +1,14 @@
+tong = 0
+
+while True:
+    s = input()
+    if s == "":
+        break
+    loai, tien = s.split()
+    tien = int(tien)
+    if loai == "D":
+        tong += tien
+    elif loai == "W":
+        tong -= tien
+
+print("So du:", tong)

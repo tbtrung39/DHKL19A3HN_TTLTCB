@@ -1,0 +1,19 @@
+import random
+
+A = [random.randint(1, 99999) for _ in range(1000)]
+
+# Cách 1: dùng sorted
+B = sorted(A)
+print("Sap xep bang sorted:")
+print(B)
+
+# Cách 2: không dùng sorted (bubble sort)
+C = A.copy()
+
+for i in range(len(C)):
+    for j in range(len(C)-1-i):
+        if C[j] > C[j+1]:
+            C[j], C[j+1] = C[j+1], C[j]
+
+print("Sap xep khong dung sorted:")
+print(C)

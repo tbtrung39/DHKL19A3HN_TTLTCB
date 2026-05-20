@@ -1,0 +1,11 @@
+
+List_ = [["mon",73],["tue",89],["wed",95],
+         ["thu",103],["fri",115],["sat",128],["sun",120]]
+
+print(List_)
+print("Phan tu thu hai cua sublist thu 3:", List_[2][1])
+print("Do dai:", len(List_))
+List_.append(["new",150])
+print("Sau khi them:", List_)
+tong = List_[1][1] + List_[2][1] + List_[5][1] + List_[6][1]
+print("Tong:", tong)

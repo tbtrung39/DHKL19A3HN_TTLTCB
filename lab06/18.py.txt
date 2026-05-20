@@ -1,0 +1,14 @@
+m = int(input("Nhap so hang: "))
+n = int(input("Nhap so cot: "))
+A = []
+
+for i in range(m):
+    row = list(map(int, input(f"Nhap hang {i+1}: ").split()))
+    A.append(row)
+
+print("Ma tran A:")
+for row in A:
+    print(row)
+
+tong = sum(sum(row) for row in A)
+print("Tong cac phan tu:", tong)

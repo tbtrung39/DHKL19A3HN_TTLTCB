@@ -1,0 +1,11 @@
+ds = []
+n = int(input("Nhap so luong tuple: "))
+
+for i in range(n):
+    name = input("Name: ")
+    age = int(input("Age: "))
+    score = int(input("Score: "))
+    ds.append((name, age, score))
+
+ds.sort(key=lambda x: (x[0], x[1], x[2]))
+print(ds)

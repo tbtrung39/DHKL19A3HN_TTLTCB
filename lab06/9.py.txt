@@ -1,0 +1,8 @@
+
+# =========================
+nums = list(map(int, input("Nhap cac so: ").split()))
+
+for x in nums:
+    assert x % 2 == 0, "Co so khong phai so chan!"
+
+print("Tat ca deu la so chan")

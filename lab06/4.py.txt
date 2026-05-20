@@ -1,0 +1,29 @@
+A = []
+
+while True:
+    x = int(input("Nhap so (0 de dung): "))
+    if x == 0:
+        break
+    A.append(x)
+
+print("Danh sach ban dau:", A)
+
+A_dau = [1,2,3] + A
+A_cuoi = A + [1,2,3]
+A_giua = A.copy()
+if len(A_giua) >= 4:
+    A_giua[4:4] = [1,2,3]
+else:
+    A_giua.extend([1,2,3])
+
+print("Chen dau:", A_dau)
+print("Chen cuoi:", A_cuoi)
+print("Chen vi tri thu 5:", A_giua)
+
+k = int(input("Nhap vi tri can xoa: "))
+if 0 <= k < len(A):
+    A.pop(k)
+
+print("Sau khi xoa:", A)
+print("Tang dan:", sorted(A))
+print("Giam dan:", sorted(A, reverse=True))
