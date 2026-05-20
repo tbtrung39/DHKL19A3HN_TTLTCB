@@ -1,0 +1,24 @@
+students = {}
+
+n = int(input("Nhap so sinh vien: "))
+
+for i in range(n):
+    ma = input("Ma SV: ")
+    ten = input("Ho ten: ")
+    diem = round(float(input("Diem: ")))
+
+    students[ma] = {
+        "ten": ten,
+        "diem": diem
+    }
+
+sorted_students = sorted(
+    students.items(),
+    key=lambda x: x[1]["diem"],
+    reverse=True
+)
+
+print("Danh sach sinh vien:")
+
+for ma, info in sorted_students:
+    print(ma, "-", info["ten"], "-", info["diem"])

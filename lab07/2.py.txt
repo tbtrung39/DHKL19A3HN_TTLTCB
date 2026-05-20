@@ -1,0 +1,11 @@
+numbers = []
+n = int(input("Nhap so luong phan tu: "))
+
+for i in range(n):
+    x = int(input("Nhap phan tu thu {i+1}: "))
+    Numbers.append(x)
+
+A = set(numbers)
+
+print("Numbers =", numbers)
+print("A =", A)

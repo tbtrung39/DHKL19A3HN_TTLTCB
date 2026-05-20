@@ -1,0 +1,12 @@
+m = input("Nhap m: ")
+n = input("Nhap n: ")
+a = set(m)
+b = set(n)
+common = a.intersection(b)
+tong = 0
+
+for x in common:
+    tong += int(x)
+
+print("Chu so chung =", common)
+print("Tong =", tong)

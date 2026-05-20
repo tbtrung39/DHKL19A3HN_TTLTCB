@@ -1,0 +1,49 @@
+employees = {}
+n = int(input("Nhap so nhan vien: "))
+
+for i in range(n):
+    ma = input("Ma nhan vien: ")
+    ten = input("Ho ten: ")
+    namsinh = int(input("Nam sinh: "))
+    luong = float(input("Luong: "))
+
+    employees[ma] = {
+        "ten": ten,
+        "namsinh": namsinh,
+        "luong": luong
+    }
+
+ma = input("Nhap ma NV moi: ")
+ten = input("Ho ten: ")
+namsinh = int(input("Nam sinh: "))
+luong = float(input("Luong: "))
+
+employees[ma] = {
+    "ten": ten,
+    "namsinh": namsinh,
+    "luong": luong
+}
+
+x = input("Nhap ma can tim: ")
+if x in employees:
+    print(employees[x])
+else:
+    print("Khong tim thay")
+
+y = input("Nhap ma can tang luong: ")
+if y in employees:
+    employees[y]["luong"] += 1000000
+
+z = input("Nhap ma can xoa: ")
+if z in employees:
+    del employees[z]
+
+sorted_emp = sorted(
+    employees.items(),
+    key=lambda item: item[1]["namsinh"],
+    reverse=True
+)
+
+print("Danh sach nhan vien:")
+for ma, info in sorted_emp:
+    print(ma, info)

@@ -1,0 +1,31 @@
+thisinh = {}
+
+n = int(input("Nhap so thi sinh: "))
+
+for i in range(n):
+    sbd = input("SBD: ")
+    hoten = input("Ho ten: ")
+    diem = float(input("Diem: "))
+
+    thisinh[sbd] = {
+        "hoten": hoten,
+        "diem": diem
+    }
+
+tim = input("Nhap SBD can tim: ")
+
+if tim in thisinh:
+    print("Ho ten:", thisinh[tim]["hoten"])
+    print("Diem:", thisinh[tim]["diem"])
+else:
+    print("Khong ton tai")
+
+    hoten = input("Nhap ho ten moi: ")
+    diem = float(input("Nhap diem moi: "))
+
+    thisinh[tim] = {
+        "hoten": hoten,
+        "diem": diem
+    }
+
+print(thisinh)

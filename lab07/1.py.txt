@@ -1,0 +1,15 @@
+s = set()
+
+while True:
+    ky_tu = input("Nhap ky tu: ")
+
+    if ky_tu.upper() == "ESC":
+        break
+    s.add(ky_tu)
+
+for x in list(s):
+    if x.isdigit():
+        s.remove(x)
+
+print("Set sau khi xoa:")
+print(s)

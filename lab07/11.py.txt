@@ -1,0 +1,9 @@
+cpp = set(map(int, input("Nhap C++: ").split()))
+java = set(map(int, input("Nhap Java: ").split()))
+python_set = set(map(int, input("Nhap Python: ").split()))
+
+one_lang = (cpp ^ java ^ python_set) - (cpp & java) - (cpp & python_set) - (java & python_set)
+three_lang = cpp & java & python_set
+
+print("Chi thi 1 ngon ngu =", one_lang)
+print("Thi ca 3 ngon ngu =", three_lang)

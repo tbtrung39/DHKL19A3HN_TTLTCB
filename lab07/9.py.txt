@@ -1,0 +1,24 @@
+n = int(input("Nhap n: "))
+
+def la_so_nt(x):
+    if x < 2:
+        return False
+
+    for i in range(2, int(x ** 0.5) + 1):
+        if x % i == 0:
+            return False
+
+    return True
+
+A = set()
+B = set()
+
+for i in range(2, n + 1):
+    if la_so_nt(i):
+        if n % i == 0:
+            A.add(i)
+        else:
+            B.add(i)
+
+print("Tap A =", A)
+print("Tap B =", B)

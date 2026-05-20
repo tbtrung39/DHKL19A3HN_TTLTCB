@@ -1,0 +1,7 @@
+W = input("Nhap chuoi: ")
+d = {}
+
+for ch in W:
+    d[ch] = W.count(ch)
+
+print(d)

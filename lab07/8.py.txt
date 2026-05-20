@@ -1,0 +1,17 @@
+A = {1, 2, 3.5, 4.7, "Python", "Hello"}
+
+so_nguyen = 0
+so_thuc = 0
+chuoi = 0
+
+for x in A:
+    if type(x) == int:
+        so_nguyen += 1
+    elif type(x) == float:
+        so_thuc += 1
+    elif type(x) == str:
+        chuoi += 1
+
+print("So nguyen =", so_nguyen)
+print("So thuc =", so_thuc)
+print("Chuoi =", chuoi)

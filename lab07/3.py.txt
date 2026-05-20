@@ -1,0 +1,11 @@
+import random
+
+n = int(input("Nhap n: "))
+A = set()
+
+while len(A) < n:
+    A.add(round(random.uniform(1, 100), 2))
+print("A =", A)
+print("Min =", min(A))
+print("Max =", max(A))
+print("Tong =", sum(A))

@@ -1,0 +1,14 @@
+import random
+import string
+
+A = set()
+B = set()
+
+while len(A) < 5:
+    A.add(random.choice(string.ascii_letters))
+while len(B) < 5:
+    B.add(random.randint(0, 9))
+
+print("A =", A)
+print("B =", B)
+print("Phan tu chung =", A.intersection(B))
